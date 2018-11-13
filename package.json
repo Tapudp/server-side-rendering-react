@@ -2,11 +2,13 @@
   "name": "ssr",
   "version": "1.0.0",
   "description": "server-side-rendering with react",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "webpack && babel-node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "express": "^4.13.4",
     "path": "^0.12.7",
     "react": "^0.14.8",
     "react-dom": "^0.14.8"
